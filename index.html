@@ -1,12 +1,15 @@
-@ -0,0 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    </head>
+    
 </head>
 <body>
     <header class="header">
@@ -105,11 +108,40 @@
 
     <section id="contact">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+        <hr>
+        <div class="contact-container">
+            <div class="contact-info">
+                <p><i class="fab fa-telegram"></i> <strong>Telegram:</strong><br>
+                     <a href= "https://t.me/disappointment_pandas" target="_blank">disappointment_pandas</a></p>
+                <p><i class="fab fa-github"></i> <strong>GitHub:</strong><br> 
+                     <a href="https://github.com/Meronawitcoder" target="_blank">Meronawitcoder</a></p>
+                <p><i class="fas fa-envelope"></i> <strong>Email:</strong><br> 
+                     <a href="https://merawitdejene55@gmail,com">merawitdejene55@gmail,com</a></p>
+                <p><i class="fas fa-phone"></i> <strong>Phone:</strong><br> 
+                     +251-9-55-40-32-58</p>
+            </div>
+            <form class="contact-form">
+                <div id="name"> 
+                    Enter Your First Name: <br>
+                    <input type="text" placeholder="First Name" width="30px"><br>
+                    Enter Your Last Name: <br>
+                    <input type="text" placeholder="Last Name" width="30px"><br>
+                    Enter Your Email: <br>
+                    <input type="email" placeholder="Email.com" width="30px"><br>
+                    Enter your comment here:<br>
+                    <textarea id="message" name="Bio" rows="3" cols="30" placeholder="I would like to say..."></textarea><br>
+                </div>
+                <input type="submit" value="Submit" id="Submit">
+            </form>
+        </div>
     </section>
-
+    
+    
+    
+    
+    
     <footer id="footer">
-        <p>&copy; 2024 My Portfolio</p>
+        <p>2024 My Portfolio</p>
     </footer>
 </body>
 </html>
