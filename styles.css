@@ -93,6 +93,8 @@ body {
     .header {
         padding: 1.3rem 5%;
     }
+    .contact-container { gap: 40px; /* Increase the gap if needed */ } .contact-info, .contact-form { width: 50%; /* Ensure both take up 50% of the container */ }
+
 }
 
 @media(max-width: 710px) {
@@ -190,6 +192,11 @@ section {
     margin: 2rem 0;
     border: 3px solid rgb(72, 25, 25);
 }
+#contact hr{
+    width:70%;
+    margin: 2rem 0;
+    border: 2px solid rgb(72, 25, 25);
+}
 #projects h2 { 
     align-self: flex-start; /* Aligns the header to the left */ margin-left: 2rem; /* Adds some left margin for better positioning */ } 
  .project-description {
@@ -219,9 +226,94 @@ span{
     font-weight: bold;
 }
 .skill {
-     width: 80%; margin: 1rem 0; text-align: left; } 
-.skill label { font-weight: bold; margin-bottom: 0.5rem; display: inline-block; } 
-progress { width: 100%; height: 20px; -webkit-appearance: none; appearance: none; }
-progress::-webkit-progress-bar { background-color: #f3f3f3; border-radius: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset; } 
-progress::-webkit-progress-value { background-color: #5c4033; /* Dark brown color */ border-radius: 10px; }
-progress::-moz-progress-bar { background-color: #5c4033; /* Dark brown color for Firefox */ }
+     width: 80%; 
+     margin: 1rem 0;
+    text-align: left; 
+    } 
+.skill label { 
+    font-weight: bold; 
+    margin-bottom: 0.5rem; 
+    display: inline-block; 
+} 
+progress { 
+    width: 100%; 
+    height: 20px;
+    -webkit-appearance: none;
+     appearance: none;
+     } 
+progress::-webkit-progress-bar { 
+    background-color: #f3f3f3; 
+    border-radius: 10px;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+     } 
+progress::-webkit-progress-value
+ { 
+    background-color: #5c4033;
+     /* Dark brown color */ 
+     border-radius: 10px; 
+    } 
+progress::-moz-progress-bar { 
+    background-color: #5c4033;
+     /* Dark brown color for Firefox */ }
+#footer {
+     background-color: #5c4033; 
+     color: #ffffff; 
+     padding: 1rem 0; 
+     text-align: center;
+     font-family: 'Courier New', Courier, monospace;
+     }
+
+     .contact-container {
+        display: flex;
+        justify-content: space-between; /* Adjust space between items */
+        gap: 20px; /* Add gap between the contact info and form */
+    }
+    
+    .contact-info {
+        width: 50%;
+        background-color: #efc9a0; /* Background color */
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        text-align: left; /* Left align text inside the form */
+    }
+    
+    .contact-form {
+        width: 50%;
+        background-color: #efc9a0; /* Background color */
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        text-align: left; /* Left align text inside the form */
+    }
+    
+    .contact-info p {
+        margin: 10px 0; /* Add some spacing between the items */
+    }
+    
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form input[type="submit"],
+    .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    #Submit:hover {
+        background-color: #5c4033; /* Darker brown background on hover */
+        transform: scale(1.1); /* Slightly increase the size of the button */
+    }
+
+    section a{
+        color: #5c4033;
+    }
+    section a:hover{
+        color: #f68103;
+    }
+    
+
+
+
