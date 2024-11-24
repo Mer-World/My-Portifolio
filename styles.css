@@ -54,12 +54,7 @@ body {
     left: 100%;
 }
 
-.logo {
-    font-size: 2rem;
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 500;
-}
+
 
 .navbar a {
     font-size: 1.15rem;
@@ -98,6 +93,8 @@ body {
 }
 
 @media(max-width: 710px) {
+  
+
     .icons {
         display: inline-flex;
     }
@@ -153,6 +150,8 @@ body {
         opacity: 1;
         transition-delay: calc(0.15s * var(--i));
     }
+   
+   
 
 }
 
@@ -313,7 +312,12 @@ progress::-moz-progress-bar {
     section a:hover{
         color: #f68103;
     }
-    
 
 
-
+   .Mer-world{
+    position: absolute; 
+    top: 0;
+     left: 0; 
+     width: 68px; /* Adjust the size as needed */
+      height: 66px; /* Adjust the size as needed */ border-radius: 80%;
+   }
